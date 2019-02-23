@@ -1,4 +1,5 @@
-# Hugo 日本語ドキュメント (工事中)
+# Hugo Documentation 和訳プロジェクト ʕ◔ϖ◔ʔ (工事中)
+
 
 
 ## ドキュメント翻訳プロジェクトについて
@@ -8,9 +9,11 @@
 - [hugojapan/ja: Hugo documentation Japanese version](https://github.com/hugojapan/ja)
 
 
+
 ## 翻訳の優先順位
 
 Issues で `優先` タグがあるファイルを優先して翻訳してほしいです。
+
 
 
 ## 方法
@@ -31,6 +34,7 @@ git remote add ja-subtree https://github.com/hugojapan/ja.git
 git commit -am "Add remote hugojapan/ja"
 git subtree add --prefix=content/ja --squash ja-subtree master
 ```
+
 
 
 ## 注意事項
