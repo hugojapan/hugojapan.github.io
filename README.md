@@ -1,4 +1,4 @@
-# Hugo Docs Japanese
+[View on GitHub](https://github.com/hugojapan/hugojapan.github.io) | [Main repo](https://github.com/hugojapan/hugoDocs) | [Organization](https://github.com/hugojapan)
 
 **ʕ◔ϖ◔ʔ (工事中)**
 
