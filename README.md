@@ -39,6 +39,10 @@ git commit -am "Add remote hugojapan/ja"
 git subtree add --prefix=content/ja --squash ja-subtree master
 ```
 
+- `Squash merge` するので自分で切ったブランチのコミットは適当で構いません。
+    - こまめにコミットすると複数人でレビューしやすいかも。
+    - `rebase` は使わずに `merge` して親ブランチの変更を取り込んでください。
+
 
 
 ## 注意事項
