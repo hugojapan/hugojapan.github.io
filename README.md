@@ -1,4 +1,8 @@
-# Hugo Documentation 和訳プロジェクト ʕ◔ϖ◔ʔ (工事中)
+# Hugo Docs Japanese
+
+**ʕ◔ϖ◔ʔ (工事中)**
+
+Hugo Documentation の和訳・日本語訳プロジェクト
 
 
 
