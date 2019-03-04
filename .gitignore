@@ -1,5 +1,6 @@
 # macOS
 .DS_Store
+._*
 
 # emacs, vim
 *~
