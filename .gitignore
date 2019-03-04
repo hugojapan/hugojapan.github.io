@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# emacs, vim
+*~
+
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
