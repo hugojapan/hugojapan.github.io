@@ -1,6 +1,7 @@
+# **ʕ◔ϖ◔ʔ (工事中)**
+
 [View on GitHub](https://github.com/hugojapan/hugojapan.github.io) | [Main repo](https://github.com/hugojapan/hugoDocs) | [Organization](https://github.com/hugojapan)
 
-**ʕ◔ϖ◔ʔ (工事中)**
 
 Hugo Documentation の和訳・日本語訳プロジェクト
 
@@ -16,7 +17,10 @@ Hugo Documentation の和訳・日本語訳プロジェクト
 
 ## 翻訳の優先順位
 
-Issues で `優先` タグがあるファイルを優先して翻訳してほしいです。
+- ~~Issues で `優先` タグがあるファイルを優先して翻訳してほしいです。~~Issues
+- お好きなページの翻訳をお願いします。
+- 1ページの一部分の翻訳でも構いません。
+- 翻訳の訂正なども歓迎します。
 
 
 
@@ -31,24 +35,60 @@ Issues で `優先` タグがあるファイルを優先して翻訳してほし
 ### 初回
 
 ```sh
-# fork
-git clone https://github.com/hugojapan/hugoDocs.git
+# fork hugojapan/hugoDocs
+git clone https://github.com/[your_github_id]/hugoDocs.git
 cd hugoDocs
-git fetch origin
-git checkout -b japanese origin/japanese
-git remote add ja-subtree https://github.com/hugojapan/ja.git
-git commit -am "Add remote hugojapan/ja"
-git subtree add --prefix=content/ja --squash ja-subtree master
+# fork hugojapan/ja
+git submodule add https://github.com/[your_github_id]/ja.git content/ja
+cd content/ja
+git checkout -b [target]
+vim [target.md]
+git add [target.md]
+git commit -m "translate: target"
+git push origin [target]
+# Pull Request を作成する。
+# 必要があれば適宜追加で add, commit, push する。
 ```
 
 - `Squash merge` するので自分で切ったブランチのコミットは適当で構いません。
     - こまめにコミットすると複数人でレビューしやすいかも。
     - `rebase` は使わずに `merge` して親ブランチの変更を取り込んでください。
 
+### Netlify deploy preview
+
+- [世界最速のウェブサイト構築フレームワーク | Hugo](https://hugodocsja.netlify.com/)
+
+👆 ここでプレビューを確認できますが `hugojapan/ja` への push がリアルタイムに反映されるわけではありません。
+なお、このプレビューサイトは [robots.txt] を設置して検索エンジンによるインデキシングを拒否しています。
+よって、このプレビューサイトが検索結果に表示されてしまう心配はありません。
+
+### 2回目以降
+
+```sh
+cd content/ja
+git remote add upstream https://github.com/hugojapan/ja.git
+git checkout master
+git pull upstream master
+git checkout -b [target]
+vim [target.md]
+git add [target.md]
+git commit -m "translate: target"
+git push origin [target]
+# Pull Request を作成する。
+# 必要があれば適宜追加で add, commit, push する。
+```
+
 
 
 ## 注意事項
 
 - 翻訳サービスの出力をそのまま利用しない。
+    - ライセンスに引っかかる可能性があるので。
+    - まだまだ人間の手直しが必要な品質であることがほとんど。
+    - 参考にする程度にしてほしい。
 - 英文以上の情報を追加しない。
     - 英文の内容以上の情報を含めるべきと判断した場合は本家に貢献してから。
+
+
+
+[robots.txt]: https://hugodocsja.netlify.com/robots.txt

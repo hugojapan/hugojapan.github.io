@@ -2,12 +2,6 @@
 .DS_Store
 ._*
 
-# emacs, vim
+# editor
 *~
-
-# vscode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode
