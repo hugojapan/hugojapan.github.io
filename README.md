@@ -31,11 +31,11 @@ Hugo Documentation の和訳・日本語訳プロジェクト
 
 実際に Pull Request を出していただくのは以下の Repository です。
 
-- [hugojapan/ja: 🇯🇵 Hugo Documentation 和訳プロジェクト](https://github.com/hugojapan/ja)
+- [hugojapan/ja](https://github.com/hugojapan/ja)
 
 以下の Repository はローカルプレビュー用です。
 
-- [hugojapan/hugoDocs: 🇯🇵 Hugo Documentation 和訳プロジェクト - まずはこちらをお読みください 👉 https://hugojapan.github.io/](https://github.com/hugojapan/hugoDocs)
+- [hugojapan/hugoDocs](https://github.com/hugojapan/hugoDocs)
 
 
 
@@ -53,7 +53,7 @@ Hugo Documentation の和訳・日本語訳プロジェクト
 - 翻訳サービスの出力をそのまま利用しない。
     - ライセンスに引っかかる可能性があるので。
     - まだまだ人間の手直しが必要な品質であることがほとんど。
-    - 参考にする程度にしてほしい。
+    - 参考にする程度で利用してほしい。
 - 英文以上の情報を追加しない。
     - 英文の内容以上の情報を含めるべきと判断した場合は本家に貢献してから。
 
