@@ -27,6 +27,8 @@ Hugo Documentation の和訳・日本語訳プロジェクト
 
 ## ドキュメント翻訳プロジェクトについて
 
+以下の Issue で提案しました。
+
 - [Translation project for Japanese users · Issue #667 · gohugoio/hugoDocs](https://github.com/gohugoio/hugoDocs/issues/667)
 
 実際に Pull Request を出していただくのは以下の Repository です。
@@ -50,12 +52,16 @@ Hugo Documentation の和訳・日本語訳プロジェクト
 
 ## 注意事項
 
-- 翻訳サービスの出力をそのまま利用しない。
-    - ライセンスに引っかかる可能性があるので。
-    - まだまだ人間の手直しが必要な品質であることがほとんど。
-    - 参考にする程度で利用してほしい。
-- 英文以上の情報を追加しない。
-    - 英文の内容以上の情報を含めるべきと判断した場合は本家に貢献してから。
+翻訳サービスの出力をそのまま利用しないでください。
+
+- ライセンスに引っかかる可能性がある
+- まだまだ人間の手直しが必要な品質であることがほとんど
+- 参考にする程度で利用してほしい
+
+英文以上の情報を追加しないようにしてください。
+
+- 英文の内容以上の情報を含めるべきと判断した場合は本家に貢献してから
+- 良い改善であれば他言語でも共有すべき
 
 
 
@@ -112,7 +118,7 @@ git push origin [target]
 
 ### Netlify deploy preview
 
-- [世界最速のウェブサイト構築フレームワーク | Hugo]
+- [世界最速のウェブサイト構築フレームワーク - Hugo]
 
 👆 ここでプレビューを確認できますが `hugojapan/ja` への push がリアルタイムに反映されるわけではありません。
 (`hugojapan/ja` の `master` への merge をトリガーにして `hugojapan/hugoDocs` の `japanese` で submodule を自動 update させる予定。
@@ -155,5 +161,5 @@ git push origin [target]
 [Main repo]: https://github.com/hugojapan/ja
 [Organization]: https://github.com/hugojapan
 [Issues hugojapan/ja]: https://github.com/hugojapan/ja/issues
-[世界最速のウェブサイト構築フレームワーク | Hugo]: https://hugodocsja.netlify.com/
+[世界最速のウェブサイト構築フレームワーク - Hugo]: https://hugodocsja.netlify.com/
 [robots.txt]: https://hugodocsja.netlify.com/robots.txt
