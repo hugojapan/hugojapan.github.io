@@ -77,6 +77,7 @@ cd hugoDocs
 git submodule add https://github.com/[your_github_id]/ja.git content/ja
 cd content/ja
 git remote add upstream https://github.com/hugojapan/ja.git
+npm install # node 実行環境が無い方はスキップしても構いません。
 git checkout -b [target]
 vim [target.md]
 git add [target.md]
@@ -89,6 +90,10 @@ git push origin [target]
 もちろん `hugo server -w` でホットリロードしながらローカルプレビューできます。
 
 - http://localhost:1313/
+
+コミットする際に textlint による日本語のチェックが自動で実行されます。
+また、個別のファイルに対して `npm run lint [target].md` で日本語のチェックができます。
+textlint のルールについて改善案があれば [Issue][Issues hugojapan/ja] を出してください。
 
 `Squash merge` するので自分で切ったブランチのコミットは適当で構いませんが、
 こまめにコミットすると複数人でレビューしやすいかもしれません。
@@ -145,9 +150,10 @@ git push origin [target]
 
 <!-- Internal References -->
 [View on GitHub]: https://github.com/hugojapan/hugojapan.github.io
-[Main repo]: https://github.com/hugojapan/ja
-[Organization]: https://github.com/hugojapan
-[世界最速のウェブサイト構築フレームワーク | Hugo]: https://hugodocsja.netlify.com/
-[robots.txt]: https://hugodocsja.netlify.com/robots.txt
 
 <!-- External References -->
+[Main repo]: https://github.com/hugojapan/ja
+[Organization]: https://github.com/hugojapan
+[Issues hugojapan/ja]: https://github.com/hugojapan/ja/issues
+[世界最速のウェブサイト構築フレームワーク | Hugo]: https://hugodocsja.netlify.com/
+[robots.txt]: https://hugodocsja.netlify.com/robots.txt
