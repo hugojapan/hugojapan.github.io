@@ -2,7 +2,7 @@
 
 [View on GitHub] | [Main repo] | [Organization]
 
-Hugo Documentation の和訳・日本語訳プロジェクト
+[Hugo Documentation] の和訳・日本語訳プロジェクト
 
 
 
@@ -27,7 +27,7 @@ Hugo Documentation の和訳・日本語訳プロジェクト
 
 ## ドキュメント翻訳プロジェクトについて
 
-以下の Issue で提案しました。
+[Hugo Documentation] の和訳プロジェクトです。以下の Issue で提案しました。
 
 - [Translation project for Japanese users · Issue #667 · gohugoio/hugoDocs](https://github.com/gohugoio/hugoDocs/issues/667)
 
@@ -160,6 +160,7 @@ git push origin [target]
 <!-- External References -->
 [Main repo]: https://github.com/hugojapan/ja
 [Organization]: https://github.com/hugojapan
+[Hugo Documentation]: https://gohugo.io/documentation/
 [Issues hugojapan/ja]: https://github.com/hugojapan/ja/issues
 [世界最速のウェブサイト構築フレームワーク - Hugo]: https://hugodocsja.netlify.com/
 [robots.txt]: https://hugodocsja.netlify.com/robots.txt
