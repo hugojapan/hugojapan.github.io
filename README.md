@@ -71,6 +71,8 @@ git push origin [target]
 
 もちろん `hugo server -w` でホットリロードしながらローカルプレビューできます。
 
+- http://localhost:1313/
+
 `Squash merge` するので自分で切ったブランチのコミットは適当で構いませんが、
 こまめにコミットすると複数人でレビューしやすいかもしれません。
 
@@ -88,9 +90,12 @@ git push origin [target]
 
 ### Netlify deploy preview
 
-- [世界最速のウェブサイト構築フレームワーク | Hugo](https://hugodocsja.netlify.com/)
+- [世界最速のウェブサイト構築フレームワーク | Hugo]
 
 👆 ここでプレビューを確認できますが `hugojapan/ja` への push がリアルタイムに反映されるわけではありません。
+(`hugojapan/ja` の `master` への merge をトリガーにして `hugojapan/hugoDocs` の `japanese` で submodule を自動 update させる予定。
+[Clone hugojapan/ja once a day at japanese branch · Issue #7 · hugojapan/ja](https://github.com/hugojapan/ja/issues/7))
+
 なお、このプレビューサイトは [robots.txt] を設置して検索エンジンによるインデキシングを拒否しています。
 よって、このプレビューサイトが検索結果に表示されてしまう心配はありません。
 
@@ -134,4 +139,5 @@ git push origin [target]
 
 <!-- Internal References -->
 <!-- External References -->
+[世界最速のウェブサイト構築フレームワーク | Hugo]: https://hugodocsja.netlify.com/
 [robots.txt]: https://hugodocsja.netlify.com/robots.txt
