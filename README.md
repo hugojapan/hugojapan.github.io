@@ -2,7 +2,7 @@
 
 [View on GitHub] | [Main repo] | [Organization]
 
-[Hugo Documentation] の和訳・日本語訳プロジェクト
+[Hugo Documentation] の和訳・日本語翻訳プロジェクト
 
 
 
