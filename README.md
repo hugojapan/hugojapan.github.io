@@ -85,8 +85,8 @@ cd content/ja
 git remote add upstream https://github.com/hugojapan/ja.git
 npm install # node 実行環境が無い方はスキップしても構いません。
 git checkout -b [target]
-vim [target.md]
-git add [target.md]
+vim [target].md
+git add [target].md
 git commit -m "translate: [target]"
 git push origin [target]
 # Pull Request を作成する。
@@ -134,8 +134,8 @@ cd content/ja
 git checkout master
 git pull upstream master
 git checkout -b [target]
-vim [target.md]
-git add [target.md]
+vim [target].md
+git add [target].md
 git commit -m "translate: [target]"
 git push origin [target]
 # Pull Request を作成する。
