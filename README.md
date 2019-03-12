@@ -12,7 +12,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [About organisation](#about-organisation)
+- [About organization](#about-organization)
 - [Translation priority](#translation-priority)
 - [Notes](#notes)
 - [How to contribute](#how-to-contribute)
@@ -31,7 +31,7 @@
 
 
 
-## About organisation
+## About organization
 
 [Hugo Documentation] の和訳・日本語翻訳プロジェクトです。以下の Issue で提案しました。
 
