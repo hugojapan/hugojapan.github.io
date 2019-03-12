@@ -124,13 +124,11 @@ textlint のルールについて改善案があれば [Issue][Issues hugojapan/
 node 環境が無い場合でも GitHub の方で CircleCI を使って textlint を実行しているので、
 リモートで自動的に校閲されます。
 
-CircleCI で実行している textlint でエラーが発生した時は `Details` をクリックすることで、
+CircleCI により実行している textlint でエラーが発生した時は `Details` をクリックすることで詳細を確認できます。
 
-![CircleCI test error](images/ci-error.jpg)
-
-以下のように詳細を確認できます。
-
-![CircleCI test status](images/ci-status.jpg)
+| GitHub pull request | CircleCI job status |
+|---|---|
+| ![CircleCI test error](images/ci-error.jpg) | ![CircleCI test status](images/ci-status.jpg) |
 
 ### commit 粒度
 
