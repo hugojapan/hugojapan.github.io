@@ -13,19 +13,19 @@
 
 
 - [About organisation](#about-organisation)
-- [翻訳の優先順位](#%E7%BF%BB%E8%A8%B3%E3%81%AE%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D)
-- [注意事項](#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85)
-- [貢献方法](#%E8%B2%A2%E7%8C%AE%E6%96%B9%E6%B3%95)
+- [Translation priority](#translation-priority)
+- [Notes](#notes)
+- [How to contribute](#how-to-contribute)
   - [Issue](#issue)
-  - [コマンド操作](#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E6%93%8D%E4%BD%9C)
-  - [Pull request の作成](#pull-request-%E3%81%AE%E4%BD%9C%E6%88%90)
-  - [ローカルプレビュー](#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC)
+  - [Commands](#commands)
+  - [Pull request](#pull-request)
+  - [Local preview](#local-preview)
   - [textlint](#textlint)
-  - [commit 粒度](#commit-%E7%B2%92%E5%BA%A6)
-  - [作業中に 親 branch で変更があった時](#%E4%BD%9C%E6%A5%AD%E4%B8%AD%E3%81%AB-%E8%A6%AA-branch-%E3%81%A7%E5%A4%89%E6%9B%B4%E3%81%8C%E3%81%82%E3%81%A3%E3%81%9F%E6%99%82)
+  - [Commit](#commit)
+  - [Merge parent branch into child branch](#merge-parent-branch-into-child-branch)
 - [Netlify deploy preview](#netlify-deploy-preview)
-- [2回目以降の貢献方法](#2%E5%9B%9E%E7%9B%AE%E4%BB%A5%E9%99%8D%E3%81%AE%E8%B2%A2%E7%8C%AE%E6%96%B9%E6%B3%95)
-- [ライセンス](#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9)
+- [How to contribute after the second](#how-to-contribute-after-the-second)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -47,7 +47,9 @@
 
 
 
-## 翻訳の優先順位
+## Translation priority
+
+翻訳の優先順位です。
 
 - ~~Issues で `優先` タグがあるファイルを優先して翻訳してほしいです。~~
 - お好きなページの翻訳をお願いします。
@@ -56,7 +58,9 @@
 
 
 
-## 注意事項
+## Notes
+
+注意事項です。
 
 翻訳サービスの出力をそのまま利用しないでください。
 
@@ -75,7 +79,7 @@
 
 
 
-## 貢献方法
+## How to contribute
 
 ### Issue
 
@@ -87,7 +91,9 @@ Issue template が用意されているので利用してください。
 
 作業の重複を避けるためにも Issue は良く確認してから参加するなり、新規 Issue を作成するなりしてください。
 
-### コマンド操作
+### Commands
+
+以下のような流れで作業することになるはずです。
 
 ```sh
 # fork hugojapan/hugoDocs
@@ -105,13 +111,13 @@ git commit -m "translate: [target]"
 git push origin [target]
 ```
 
-### Pull request の作成
+### Pull request
 
 Draft Pull Request を作成する。
 必要があれば適宜追加で add, commit, push する。
 準備ができたら `Ready for review`
 
-### ローカルプレビュー
+### Local preview
 
 もちろん `hugo server -w` でホットリロードしながらローカルプレビューできます。
 
@@ -132,21 +138,21 @@ CircleCI により実行している textlint でエラーが発生した時は 
 |---|---|
 | ![CircleCI test error](images/ci-error.jpg) | ![CircleCI test status](images/ci-status.jpg) |
 
-### commit 粒度
+### Commit
 
 `Squash merge` するので自分で切ったブランチのコミットは適当で構いませんが、
 こまめにコミットすると複数人でレビューしやすいかもしれません。
 
-### 作業中に 親 branch で変更があった時
+### Merge parent branch into child branch
 
 作業中に master branch で変更があり、それを自分のブランチに取り込みたい場合は
-以下のようにして `rebase` は使わずに `merge` して親ブランチの変更を取り込んでください。
+以下のようにして `rebase` は使わずに `--no-ff merge` して親ブランチの変更を取り込んでください。
 
 ```sh
 git checkout master
 git pull upstream master
 git checkout [target]
-git merge master
+git merge --no-ff master
 # commit
 git push origin [target]
 ```
@@ -167,7 +173,7 @@ git push origin [target]
 
 
 
-## 2回目以降の貢献方法
+## How to contribute after the second
 
 ```sh
 cd content/ja
@@ -184,7 +190,7 @@ git push origin [target]
 
 
 
-## ライセンス
+## License
 
 - [gohugoio/hugoDocs LICENSE](https://github.com/gohugoio/hugoDocs/blob/master/LICENSE.md)
 
