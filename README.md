@@ -1,7 +1,6 @@
-[View on GitHub] | [Main repo] | [Organization]
+[View on GitHub] | [Main repo] | [Organization] | [![CircleCI](https://circleci.com/gh/hugojapan/ja/tree/master.svg?style=svg)](https://circleci.com/gh/hugojapan/ja/tree/master) | [![Netlify Status](https://api.netlify.com/api/v1/badges/2887942c-b0db-456b-8672-31143217e849/deploy-status)](https://app.netlify.com/sites/hugodocsja/deploys)
 
-[![CircleCI](https://circleci.com/gh/hugojapan/ja/tree/master.svg?style=svg)](https://circleci.com/gh/hugojapan/ja/tree/master)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2887942c-b0db-456b-8672-31143217e849/deploy-status)](https://app.netlify.com/sites/hugodocsja/deploys)
+![](https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png)
 
 [Hugo Documentation] の和訳・日本語翻訳プロジェクト
 
