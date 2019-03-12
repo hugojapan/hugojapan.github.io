@@ -149,7 +149,7 @@ CircleCI により実行している textlint でエラーが発生した時は 
 ### Merge parent branch into child branch
 
 作業中に master branch で変更があり、それを自分のブランチに取り込みたい場合は
-以下のようにして `rebase` は使わずに `--no-ff merge` して親ブランチの変更を取り込んでください。
+以下のようにして `rebase` は使わずに `merge --no-ff` して親ブランチの変更を取り込んでください。
 
 ```sh
 git checkout master
