@@ -118,11 +118,19 @@ Draft Pull Request を作成する。
 ### textlint
 
 コミットする際に textlint による日本語の校閲が自動で実行されます。
-また、個別のファイルに対して `npm run lint [target].md` で日本語の校閲ができます。
+また、個別のファイルに対して `npm run lint [target].md` で校閲ができます。
 textlint のルールについて改善案があれば [Issue][Issues hugojapan/ja] を出してください。
 
 node 環境が無い場合でも GitHub の方で CircleCI を使って textlint を実行しているので、
-日本語の校閲はできます。
+リモートで自動的に校閲されます。
+
+CircleCI で実行している textlint でエラーが発生した時は `Details` をクリックすることで、
+
+![CircleCI test error](images/ci-error.jpg)
+
+以下のように詳細を確認できます。
+
+![CircleCI test status](images/ci-status.jpg)
 
 ### commit 粒度
 
