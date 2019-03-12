@@ -1,8 +1,8 @@
 [View on GitHub] | [Main repo] | [Organization] | [![CircleCI](https://circleci.com/gh/hugojapan/ja/tree/master.svg?style=svg)](https://circleci.com/gh/hugojapan/ja/tree/master) | [![Netlify Status](https://api.netlify.com/api/v1/badges/2887942c-b0db-456b-8672-31143217e849/deploy-status)](https://app.netlify.com/sites/hugodocsja/deploys)
 
-![](https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png)
-
-[Hugo Documentation] の和訳・日本語翻訳プロジェクト
+<div align="center">
+<img src="https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png" alt="" width="400px">
+</div>
 
 
 
@@ -33,7 +33,7 @@
 
 ## About organisation
 
-[Hugo Documentation] の和訳プロジェクトです。以下の Issue で提案しました。
+[Hugo Documentation] の和訳・日本語翻訳プロジェクトです。以下の Issue で提案しました。
 
 - [Translation project for Japanese users · Issue #667 · gohugoio/hugoDocs](https://github.com/gohugoio/hugoDocs/issues/667)
 
