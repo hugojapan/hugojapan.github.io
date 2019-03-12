@@ -10,7 +10,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [このプロジェクトについて](#%E3%81%93%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
+- [About organisation](#about-organisation)
 - [翻訳の優先順位](#%E7%BF%BB%E8%A8%B3%E3%81%AE%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D)
 - [注意事項](#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85)
 - [貢献方法](#%E8%B2%A2%E7%8C%AE%E6%96%B9%E6%B3%95)
@@ -29,7 +29,7 @@
 
 
 
-## このプロジェクトについて
+## About organisation
 
 [Hugo Documentation] の和訳プロジェクトです。以下の Issue で提案しました。
 
@@ -66,6 +66,10 @@
 
 - 英文の内容以上の情報を含めるべきと判断した場合は本家に貢献してから
 - 良い改善であれば他言語でも共有すべき
+
+翻訳は以下の英語ドキュメントを元に行ってください。
+
+- [Hugo Documentation]
 
 
 
