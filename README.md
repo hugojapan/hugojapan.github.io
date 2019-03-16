@@ -1,7 +1,7 @@
 [View on GitHub] | [Main repo] | [Organization]
 
 [![CircleCI](https://circleci.com/gh/hugojapan/ja/tree/master.svg?style=svg)](https://circleci.com/gh/hugojapan/ja/tree/master)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2887942c-b0db-456b-8672-31143217e849/deploy-status)](https://app.netlify.com/sites/hugodocsja/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/580c41f5-5786-4d82-b654-908aa6aa7cc8/deploy-status)](https://app.netlify.com/sites/hugodocsja/deploys)
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png" alt="" width="400px">
@@ -20,7 +20,7 @@
 - [Notes](#notes)
 - [How to contribute](#how-to-contribute)
   - [Issue](#issue)
-  - [Commands](#commands)
+  - [Process](#process)
   - [Pull request](#pull-request)
   - [Local preview](#local-preview)
   - [textlint](#textlint)
@@ -42,11 +42,11 @@
 
 実際に Pull Request を出していただくのは以下の Repository です。
 
-- [hugojapan/ja](https://github.com/hugojapan/ja)
+- [hugojapan/ja][Main repo]
 
 以下の Repository はローカルプレビュー用です。
 
-- [hugojapan/hugoDocs](https://github.com/hugojapan/hugoDocs)
+- [hugojapan/hugoDocs][preview repo]
 
 
 
@@ -94,20 +94,31 @@ Issue template が用意されているので利用してください。
 
 作業の重複を避けるためにも Issue は良く確認してから参加するなり、新規 Issue を作成するなりしてください。
 
-### Commands
+### Process
 
-以下のような流れで作業することになるはずです。
+- [hugojapan/ja][Main repo] を fork
+- [hugojapan/hugoDocs][preview repo] を clone
+
+して、以下のような流れで作業することになるはずです。
 
 ```sh
-# fork hugojapan/hugoDocs
-git clone https://github.com/[your_github_id]/hugoDocs.git
+# hugojapan/hugoDocs を clone する。
+git clone https://github.com/hugojapan/hugoDocs.git
 cd hugoDocs
-# fork hugojapan/ja
+# preview 用 branch は japanese (デフォルトが japanese になっているはず)
+
+# hugojapan/ja を fork したら hugoDocs の submodule として登録する。
 git submodule add https://github.com/[your_github_id]/ja.git content/ja
 cd content/ja
 git remote add upstream https://github.com/hugojapan/ja.git
-npm install --save-dev # node 実行環境が無い方はスキップしても構いません。
+
+# node 実行環境が無い方はスキップしても構いません。
+npm install --save-dev
+
+# 作業用 branch を作ってチェックアウトする。
 git checkout -b [target]
+
+# add, commit, push を繰り返す。
 vim [target].md
 git add [target].md
 git commit -m "translate: [target]"
@@ -139,7 +150,7 @@ CircleCI により実行している textlint でエラーが発生した時は 
 
 | GitHub pull request | CircleCI job status |
 |---|---|
-| ![CircleCI test error](images/ci-error.jpg) | ![CircleCI test status](images/ci-status.jpg) |
+| ![](images/ci-error.jpg) | ![](images/ci-status.jpg) |
 
 ### Commit
 
@@ -166,11 +177,15 @@ git push origin [target]
 
 - [世界最速のウェブサイト構築フレームワーク - Hugo]
 
-👆 ここでプレビューを確認できますが `hugojapan/ja` への push がリアルタイムに反映されるわけではありません。
-(`hugojapan/ja` の `master` への merge をトリガーにして `hugojapan/hugoDocs` の `japanese` で submodule を自動 update させる予定。
-[Clone hugojapan/ja once a day at japanese branch · Issue #7 · hugojapan/ja](https://github.com/hugojapan/ja/issues/7))
+上記リンクは master branch のプレビューです。
+Pull request を作成すると Netlify deploy preview のリンクが発行されてプレビューを確認できるようになります。
 
-なお、このプレビューサイトは [robots.txt] を設置して検索エンジンによるインデキシングを拒否しています。
+| Netlify deploy preview | Netlify build status |
+|---|---|
+| ![](./images/netlify-deploy-preview-pulls-comment.jpg) | ![](./images/netlify-status.jpg) |
+
+
+なお、これらのプレビューサイトは [robots.txt] を設置して検索エンジンによるインデキシングを拒否しています。
 よって、このプレビューサイトが検索結果に表示されてしまう心配はありません。
 最終的に日本語ドキュメントも `gohugo.io` のドメインで公開される予定です。
 
@@ -178,18 +193,26 @@ git push origin [target]
 
 ## How to contribute after the second
 
+2回目以降の貢献方法です。
+
 ```sh
 cd content/ja
+
+# remote master の変更を local master に取り込む。
 git checkout master
 git pull upstream master
+
+# 作業用 branch を作ってチェックアウトする。
 git checkout -b [target]
+
+# add, commit, push を繰り返す。
 vim [target].md
 git add [target].md
 git commit -m "translate: [target]"
 git push origin [target]
-# Pull Request を作成する。
-# 必要があれば適宜追加で add, commit, push する。
 ```
+
+`Draft pull request` を作成して作業を進め、レビューの準備ができたら `Ready for review` してください。
 
 
 
@@ -208,6 +231,7 @@ git push origin [target]
 
 <!-- External References -->
 [Main repo]: https://github.com/hugojapan/ja
+[preview repo]: https://github.com/hugojapan/hugoDocs
 [Organization]: https://github.com/hugojapan
 [Hugo Documentation]: https://gohugo.io/documentation/
 [Issues hugojapan/ja]: https://github.com/hugojapan/ja/issues
