@@ -193,18 +193,26 @@ Pull request を作成すると Netlify deploy preview のリンクが発行さ�
 
 ## How to contribute after the second
 
+2回目以降の貢献方法です。
+
 ```sh
 cd content/ja
+
+# remote master の変更を local master に取り込む。
 git checkout master
 git pull upstream master
+
+# 作業用 branch を作ってチェックアウトする。
 git checkout -b [target]
+
+# add, commit, push を繰り返す。
 vim [target].md
 git add [target].md
 git commit -m "translate: [target]"
 git push origin [target]
-# Pull Request を作成する。
-# 必要があれば適宜追加で add, commit, push する。
 ```
+
+`Draft pull request` を作成して作業を進め、レビューの準備ができたら `Ready for review` してください。
 
 
 
