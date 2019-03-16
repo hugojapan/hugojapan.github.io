@@ -42,11 +42,11 @@
 
 実際に Pull Request を出していただくのは以下の Repository です。
 
-- [hugojapan/ja](https://github.com/hugojapan/ja)
+- [hugojapan/ja][Main repo]
 
 以下の Repository はローカルプレビュー用です。
 
-- [hugojapan/hugoDocs](https://github.com/hugojapan/hugoDocs)
+- [hugojapan/hugoDocs][preview repo]
 
 
 
@@ -96,13 +96,17 @@ Issue template が用意されているので利用してください。
 
 ### Commands
 
-以下のような流れで作業することになるはずです。
+- [hugojapan/ja][Main repo] を fork
+- [hugojapan/hugoDocs][preview repo] を clone
+
+して、以下のような流れで作業することになるはずです。
 
 ```sh
-# fork hugojapan/hugoDocs
-git clone https://github.com/[your_github_id]/hugoDocs.git
+# hugojapan/hugoDocs を clone する。
+git clone https://github.com/hugojapan/hugoDocs.git
 cd hugoDocs
-# fork hugojapan/ja
+# preview 用 branch は japanese (デフォルトが japanese になっているはず)
+# hugojapan/ja を fork する。
 git submodule add https://github.com/[your_github_id]/ja.git content/ja
 cd content/ja
 git remote add upstream https://github.com/hugojapan/ja.git
@@ -208,6 +212,7 @@ git push origin [target]
 
 <!-- External References -->
 [Main repo]: https://github.com/hugojapan/ja
+[preview repo]: https://github.com/hugojapan/hugoDocs
 [Organization]: https://github.com/hugojapan
 [Hugo Documentation]: https://gohugo.io/documentation/
 [Issues hugojapan/ja]: https://github.com/hugojapan/ja/issues
