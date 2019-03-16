@@ -178,7 +178,7 @@ git push origin [target]
 - [世界最速のウェブサイト構築フレームワーク - Hugo]
 
 上記リンクは master branch のプレビューです。
-Pull request を作成すると Netlify deploy preview によりプレビューを確認できるようになります。
+Pull request を作成すると Netlify deploy preview のリンクが発行されてプレビューを確認できるようになります。
 
 | Netlify deploy preview | Netlify build status |
 |---|---|
