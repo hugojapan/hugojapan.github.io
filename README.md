@@ -20,7 +20,7 @@
 - [Notes](#notes)
 - [How to contribute](#how-to-contribute)
   - [Issue](#issue)
-  - [Commands](#commands)
+  - [Process](#process)
   - [Pull request](#pull-request)
   - [Local preview](#local-preview)
   - [textlint](#textlint)
@@ -94,7 +94,7 @@ Issue template が用意されているので利用してください。
 
 作業の重複を避けるためにも Issue は良く確認してから参加するなり、新規 Issue を作成するなりしてください。
 
-### Commands
+### Process
 
 - [hugojapan/ja][Main repo] を fork
 - [hugojapan/hugoDocs][preview repo] を clone
@@ -106,12 +106,19 @@ Issue template が用意されているので利用してください。
 git clone https://github.com/hugojapan/hugoDocs.git
 cd hugoDocs
 # preview 用 branch は japanese (デフォルトが japanese になっているはず)
-# hugojapan/ja を fork する。
+
+# hugojapan/ja を fork したら hugoDocs の submodule として登録する。
 git submodule add https://github.com/[your_github_id]/ja.git content/ja
 cd content/ja
 git remote add upstream https://github.com/hugojapan/ja.git
-npm install --save-dev # node 実行環境が無い方はスキップしても構いません。
+
+# node 実行環境が無い方はスキップしても構いません。
+npm install --save-dev
+
+# 作業用 branch を作ってチェックアウトする。
 git checkout -b [target]
+
+# add, commit, push を繰り返す。
 vim [target].md
 git add [target].md
 git commit -m "translate: [target]"
