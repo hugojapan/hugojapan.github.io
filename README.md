@@ -1,7 +1,7 @@
 [View on GitHub] | [Main repo] | [Organization]
 
 [![CircleCI](https://circleci.com/gh/hugojapan/ja/tree/master.svg?style=svg)](https://circleci.com/gh/hugojapan/ja/tree/master)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2887942c-b0db-456b-8672-31143217e849/deploy-status)](https://app.netlify.com/sites/hugodocsja/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/580c41f5-5786-4d82-b654-908aa6aa7cc8/deploy-status)](https://app.netlify.com/sites/hugodocsja/deploys)
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png" alt="" width="400px">
