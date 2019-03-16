@@ -150,7 +150,7 @@ CircleCI により実行している textlint でエラーが発生した時は 
 
 | GitHub pull request | CircleCI job status |
 |---|---|
-| ![CircleCI test error](images/ci-error.jpg) | ![CircleCI test status](images/ci-status.jpg) |
+| ![](images/ci-error.jpg) | ![](images/ci-status.jpg) |
 
 ### Commit
 
@@ -177,11 +177,15 @@ git push origin [target]
 
 - [世界最速のウェブサイト構築フレームワーク - Hugo]
 
-👆 ここでプレビューを確認できますが `hugojapan/ja` への push がリアルタイムに反映されるわけではありません。
-(`hugojapan/ja` の `master` への merge をトリガーにして `hugojapan/hugoDocs` の `japanese` で submodule を自動 update させる予定。
-[Clone hugojapan/ja once a day at japanese branch · Issue #7 · hugojapan/ja](https://github.com/hugojapan/ja/issues/7))
+上記リンクは master branch のプレビューです。
+Pull request を作成すると Netlify deploy preview によりプレビューを確認できるようになります。
 
-なお、このプレビューサイトは [robots.txt] を設置して検索エンジンによるインデキシングを拒否しています。
+| Netlify deploy preview | Netlify build status |
+|---|---|
+| ![](./images/netlify-deploy-preview-pulls-comment.jpg) | ![](./images/netlify-status.jpg) |
+
+
+なお、これらのプレビューサイトは [robots.txt] を設置して検索エンジンによるインデキシングを拒否しています。
 よって、このプレビューサイトが検索結果に表示されてしまう心配はありません。
 最終的に日本語ドキュメントも `gohugo.io` のドメインで公開される予定です。
 
