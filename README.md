@@ -113,7 +113,7 @@ cd content/ja
 git remote add upstream https://github.com/hugojapan/ja.git
 
 # node 実行環境が無い方はスキップしても構いません。
-npm install --save-dev
+npm install
 
 # 作業用 branch を作ってチェックアウトする。
 git checkout -b [target]
