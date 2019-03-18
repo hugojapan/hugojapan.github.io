@@ -184,10 +184,18 @@ Pull request を作成すると Netlify deploy preview のリンクが発行さ�
 |---|---|
 | ![](./images/netlify-deploy-preview-pulls-comment.jpg) | ![](./images/netlify-status.jpg) |
 
-
 なお、これらのプレビューサイトは [robots.txt] を設置して検索エンジンによるインデキシングを拒否しています。
 よって、このプレビューサイトが検索結果に表示されてしまう心配はありません。
 最終的に日本語ドキュメントも `gohugo.io` のドメインで公開される予定です。
+
+<details>
+<summary>Deploy Notes</summary>
+
+```
+mkdir ja && mv _index.md about commands content-management contribute documentation.md functions getting-started hosting-and-deployment hugo-pipes maintenance news readfiles showcase templates themes tools troubleshooting variables ja/ && rm -rf hugoDocs && git clone https://github.com/hugojapan/hugoDocs.git && cd hugoDocs && mv ../ja content/ && hugo --gc --minify --baseURL 'https://hugodocsja.netlify.com/' && echo -e 'User-agent: *\nDisallow: /' > public/robots.txt
+```
+
+</details>
 
 
 
