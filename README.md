@@ -108,6 +108,7 @@ cd hugoDocs
 # preview 用 branch は japanese (デフォルトが japanese になっているはず)
 
 # hugojapan/ja を fork したら hugoDocs の submodule として登録する。
+git rm content/ja
 git submodule add https://github.com/[your_github_id]/ja.git content/ja
 cd content/ja
 git remote add upstream https://github.com/hugojapan/ja.git
