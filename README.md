@@ -4,7 +4,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/580c41f5-5786-4d82-b654-908aa6aa7cc8/deploy-status)](https://app.netlify.com/sites/hugodocsja/deploys)
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png" alt="" width="400px">
+<img src="./images/hugo-logo.png" alt="Hugo Logo" width="400px">
 </div>
 
 
