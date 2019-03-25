@@ -193,7 +193,7 @@ Pull request を作成すると Netlify deploy preview のリンクが発行さ�
 <summary>Deploy Notes</summary>
 
 ```
-mkdir .ja && mv * .ja/ && rm -rf hugoDocs && git clone --depth=1 -b japanese https://github.com/hugojapan/hugoDocs.git && cd hugoDocs && mv ../.ja content/ja && hugo --gc --minify --baseURL 'https://hugodocsja.netlify.com/' && echo -e 'User-agent: *\nDisallow: /' > public/robots.txt
+rm -rf hugoDocs && mkdir .ja && mv * .ja/ && git clone --depth=1 -b japanese https://github.com/hugojapan/hugoDocs.git && cd hugoDocs && rm -rf ./content/ja && mv ../.ja ./content/ja && hugo --gc --minify --baseURL 'https://hugodocsja.netlify.com/' && echo -e 'User-agent: *\nDisallow: /' > public/robots.txt
 ```
 
 - Publish directory: `hugoDocs/public`
