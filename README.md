@@ -22,7 +22,6 @@
   - [Issue](#issue)
   - [Process](#process)
   - [Pull request](#pull-request)
-  - [Local preview](#local-preview)
   - [textlint](#textlint)
   - [Commit](#commit)
   - [Merge parent branch into child branch](#merge-parent-branch-into-child-branch)
@@ -43,10 +42,6 @@
 実際に Pull Request を出していただくのは以下の Repository です。
 
 - [hugojapan/ja][Main repo]
-
-以下の Repository はローカルプレビュー用です。
-
-- [hugojapan/hugoDocs][preview repo]
 
 
 
@@ -96,22 +91,13 @@ Issue template が用意されているので利用してください。
 
 ### Process
 
-- [hugojapan/ja][Main repo] を fork
-- [hugojapan/hugoDocs][preview repo] を clone
+- [hugojapan/ja][Main repo]
 
-して、以下のような流れで作業することになるはずです。
+を fork した後、以下のような流れで作業することになるはずです。
 
 ```sh
-# hugojapan/hugoDocs を clone する。
-git clone https://github.com/hugojapan/hugoDocs.git
-cd hugoDocs
-# preview 用 branch は japanese (デフォルトが japanese になっているはず)
-
-# hugojapan/ja を fork したら hugoDocs の submodule として登録する。
-git rm content/ja
-git submodule add https://github.com/[your_github_id]/ja.git content/ja
-cd content/ja
-git remote add upstream https://github.com/hugojapan/ja.git
+git clone https://github.com/[your_github_id]/ja.git
+cd ja
 
 # node 実行環境が無い方はスキップしても構いません。
 npm install
@@ -131,12 +117,6 @@ git push origin [target]
 Draft Pull Request を作成する。
 必要があれば適宜追加で add, commit, push する。
 準備ができたら `Ready for review`
-
-### Local preview
-
-もちろん `hugo server -w` でホットリロードしながらローカルプレビューできます。
-
-- [http://localhost:1313/](http://localhost:1313/)
 
 ### textlint
 
@@ -199,6 +179,17 @@ rm -rf hugoDocs && mkdir .ja && mv * .ja/ && git clone --depth=1 -b japanese htt
 - Publish directory: `hugoDocs/public`
 - Deploy notifications: Enable `Add deploy notifications as pull request comments when deploy succeeds`
 
+```sh
+# At hugojapan/hugoDocs
+git clone https://github.com/hugojapan/hugoDocs.git
+cd hugoDocs
+git checkout japanese
+git rm content/ja
+git submodule add https://github.com/[your_github_id]/ja.git content/ja
+cd content/ja
+git remote add upstream https://github.com/hugojapan/ja.git
+```
+
 </details>
 
 
@@ -243,7 +234,6 @@ git push origin [target]
 
 <!-- External References -->
 [Main repo]: https://github.com/hugojapan/ja
-[preview repo]: https://github.com/hugojapan/hugoDocs
 [Organization]: https://github.com/hugojapan
 [Hugo Documentation]: https://gohugo.io/documentation/
 [Issues hugojapan/ja]: https://github.com/hugojapan/ja/issues
