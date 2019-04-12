@@ -98,6 +98,7 @@ Issue template が用意されているので利用してください。
 ```sh
 git clone https://github.com/[your_github_id]/ja.git
 cd ja
+git remote add upstream https://github.com/hugojapan/ja.git
 
 # node 実行環境が無い方はスキップしても構いません。
 npm install
