@@ -49,7 +49,6 @@
 
 翻訳の優先順位です。
 
-- ~~Issues で `優先` タグがあるファイルを優先して翻訳してほしいです。~~
 - お好きなページの翻訳をお願いします。
 - 一部分の翻訳でも構いません。
 - 翻訳の訂正なども歓迎します。
@@ -173,15 +172,11 @@ Pull request を作成すると Netlify deploy preview のリンクが発行さ�
 <details>
 <summary>Deploy Notes</summary>
 
-```
-rm -rf hugoDocs && mkdir .ja && mv * .ja/ && git clone --depth=1 -b japanese https://github.com/hugojapan/hugoDocs.git && cd hugoDocs && rm -rf ./content/ja && mv ../.ja ./content/ja && hugo --gc --minify --baseURL 'https://hugodocsja.netlify.com/' && echo -e 'User-agent: *\nDisallow: /' > public/robots.txt
-```
-
-- Publish directory: `hugoDocs/public`
+- See [ja/netlify.toml](https://github.com/hugojapan/ja/blob/master/netlify.toml)
 - Deploy notifications: Enable `Add deploy notifications as pull request comments when deploy succeeds`
 
 ```sh
-# At hugojapan/hugoDocs
+# How to run local server
 git clone https://github.com/hugojapan/hugoDocs.git
 cd hugoDocs
 git checkout japanese
